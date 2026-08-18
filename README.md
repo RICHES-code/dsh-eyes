@@ -31,6 +31,7 @@ npx -y @deepseek-ai/dsh plugin --profile desktop add dsh-eyes
 从源码安装（开发模式）：
 
 ```bash
+git clone https://github.com/RICHES-code/dsh-eyes
 cd dsh-eyes
 pnpm install
 pnpm run build        # tsc + tsdown，产出 lib/（host + client 双面）
@@ -39,6 +40,14 @@ pnpm run build        # tsc + tsdown，产出 lib/（host + client 双面）
 npx -y @deepseek-ai/dsh plugin --profile web add "file:$(pwd)"
 npx -y @deepseek-ai/dsh plugin --profile desktop add "file:$(pwd)"
 ```
+
+> 仓库已包含构建产物（`lib/` 已提交），克隆后**无需构建**即可安装：
+> ```bash
+> git clone https://github.com/RICHES-code/dsh-eyes
+> cd dsh-eyes
+> npx -y @deepseek-ai/dsh plugin --profile web add "file:$(pwd)"
+> ```
+> 只有修改源码后才需要重新 `pnpm install && pnpm run build`。
 
 ## 使用
 
