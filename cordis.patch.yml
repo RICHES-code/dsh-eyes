@@ -1,0 +1,4 @@
+# dsh-eyes vision plugin bundle layer: mount the host half.
+- insert:
+    - id: dsh-eyes
+      name: '@deepseek-ai/dsh-eyes'
